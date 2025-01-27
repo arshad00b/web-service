@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Service Provider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Web Service Provider
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('services')">Services</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="#" onclick="showPage('signup')">Sign Up</a>
+    </nav>
+
+    <div id="home" class="content">
+        <h1>Welcome to Web Service Provider</h1>
+        <div class="home-section">
+            <p>
+                At Web Service Provider, we specialize in crafting high-quality web solutions that cater to both individual and business needs. 
+                Whether you're looking to build a responsive website, optimize your online presence, or enhance your digital marketing strategies, we are here to help.
+            </p>
+            <p>
+                Our team of experts utilizes the latest technologies and industry best practices to ensure your project stands out in today's competitive market. 
+                Partner with us to achieve your goals efficiently and effectively.
+            </p>
+            <img src="https://via.placeholder.com/800x400" alt="Web Services Overview">
+        </div>
+    </div>
+
+    <div id="about" class="content" style="display: none;">
+        <h1>About Us</h1>
+        <div class="about-section">
+            <p>
+                Web Service Provider was founded with the mission to empower businesses and individuals with top-notch web services. 
+                Our journey began in 2015, and since then, we have successfully delivered hundreds of projects across various industries.
+            </p>
+            <p>
+                With a team of dedicated professionals, we aim to deliver innovative solutions tailored to your unique needs. 
+                From designing user-friendly websites to implementing advanced cloud hosting services, our goal is to help you succeed in the digital era.
+            </p>
+            <img src="https://via.placeholder.com/800x400" alt="About Us">
+        </div>
+    </div>
+
+    <div id="services" class="content" style="display: none;">
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>We provide modern and responsive web development services to bring your ideas to life.</p>
+                <button onclick="showMessage('Web Development')">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Improve your website's ranking with our advanced SEO optimization techniques.</p>
+                <button onclick="showMessage('SEO Optimization')">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>Reach a broader audience with our tailored digital marketing strategies.</p>
+                <button onclick="showMessage('Digital Marketing')">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <h3>Cloud Hosting</h3>
+                <p>Experience secure and scalable cloud hosting services for your business.</p>
+                <button onclick="showMessage('Cloud Hosting')">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="content" style="display: none;">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out with any questions or concerns.</p>
+        <div class="form-container">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message" rows="4" style="resize: none;"></textarea>
+            <button>Send Message</button>
+        </div>
+    </div>
+
+    <div id="signup" class="content" style="display: none;">
+        <h1>Sign Up</h1>
+        <div class="form-container">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+            <input type="password" placeholder="Password">
+            <button>Register</button>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
